@@ -16,6 +16,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Custom styles -->
+  <link rel="stylesheet" href="./css/main.min.css">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -23,29 +24,29 @@
   <!-- Header section -->
   <header class="header">
     <div class="container header-container">
-      <a href="./index.html" lang="en" class="logo link">Web<span class="logo-black">Studio</span></a>
-      <nav class="header-nav">
-        <ul class="nav-list list">
-          <li class="header-item">
-            <a href="./index.html" class="header-link link">Студия</a>
+      <a href="./index.html" lang="en" class="logo">Web<span class="logo--black">Studio</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Студия</a>
           </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link header-link-current link">Портфолио</a>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
           </li>
-          <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contact-list list">
-        <li class="header-contact">
-          <a href="mailto:info@devstudio.com" class="header-contact-link link">
-            <svg width="16" height="12" class="header-icon">
+      <ul class="header-contact__list">
+        <li class="header-contact__item">
+          <a href="mailto:info@devstudio.com" class="header-contact__link">
+            <svg width="16" height="12" class="header-contact__icon">
               <use href="./images/icons.svg#mail"></use>
             </svg>info@devstudio.com
           </a>
         </li>
-        <li class="header-contact">
-          <a href="tel:+380961111111" class="header-contact-link link">
-            <svg width="10" height="16" class="header-icon">
+        <li class="header-contact__item">
+          <a href="tel:+380961111111" class="header-contact__link">
+            <svg width="10" height="16" class="header-contact__icon">
               <use href="./images/icons.svg#phone"></use>
             </svg>+38 096 111 11 11
           </a>
@@ -55,151 +56,162 @@
   </header>
   <!-- Main section -->
   <main>
-    <section class="portfolio section">
+    <section class="portfolio">
       <div class="container">
         <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="filter-list list">
-          <li class="filter-item"><button type="button" class="filter-btn btn">Все</button></li>
-          <li class="filter-item">
-            <button type="button" class="filter-btn btn">Веб-сайты</button>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <button type="button" class="filter__btn btn">Все</button>
           </li>
-          <li class="filter-item">
-            <button type="button" class="filter-btn btn">Приложения</button>
+          <li class="filter__item">
+            <button type="button" class="filter__btn btn">Веб-сайты</button>
           </li>
-          <li class="filter-item">
-            <button type="button" class="filter-btn btn">Дизайн</button>
+          <li class="filter__item">
+            <button type="button" class="filter__btn btn">Приложения</button>
           </li>
-          <li class="filter-item">
-            <button type="button" class="filter-btn btn">Маркетинг</button>
+          <li class="filter__item">
+            <button type="button" class="filter__btn btn">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button type="button" class="filter__btn btn">Маркетинг</button>
           </li>
         </ul>
         <!-- Projects -->
-        <ul class="project-list list card-set">
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project1.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+        <ul class="project__list card-set">
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project1.jpg" alt="Проект1" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Технокряк</h2>
-                <p class="project-uppertitle">Веб-сайт</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__uppertitle">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project2.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project2.jpg" alt="Проект2" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">
+              <div class="project__wrapper">
+                <h2 class="project__title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h2>
-                <p class="project-uppertitle">Дизайн</p>
+                <p class="project__uppertitle">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project3.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project3.jpg" alt="Проект3" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="project-uppertitle">Приложение</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="project__uppertitle">Приложение</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project4.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project4.jpg" alt="Проект4" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
-                <p class="project-uppertitle">Маркетинг</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Проект <span lang="en">Prime</span></h2>
+                <p class="project__uppertitle">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project5.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project5.jpg" alt="Проект5" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
-                <p class="project-uppertitle">Приложение</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Проект <span lang="en">Boxes</span></h2>
+                <p class="project__uppertitle">Приложение</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project6.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project6.jpg" alt="Проект6" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
-                <p class="project-uppertitle">Веб-сайт</p>
+              <div class="project__wrapper">
+                <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
+                <p class="project__uppertitle">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project7.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project7.jpg" alt="Проект7" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
-                <p class="project-uppertitle">Дизайн</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Издание <span lang="en">Limited Edition</span></h2>
+                <p class="project__uppertitle">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project8.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project8.jpg" alt="Проект8" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
-                <p class="project-uppertitle">Маркетинг</p>
+              <div class="project__wrapper">
+                <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+                <p class="project__uppertitle">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="project-item card-item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project-link link">
-              <div class="project-thumb">
-                <img src="./images/portfolio/project9.jpg" alt="Проект1" class="project-img" width="370" height="294" />
-                <p class="project-thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
+          <li class="project__item card-item">
+            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="project__link">
+              <div class="project__thumb">
+                <img src="./images/portfolio/project9.jpg" alt="Проект9" class="project__img" width="370"
+                  height="294" />
+                <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                   и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
               </div>
-              <div class="project-wrapper">
-                <h2 class="project-title" lang="en">Growing Business</h2>
-                <p class="project-uppertitle">Приложение</p>
+              <div class="project__wrapper">
+                <h2 class="project__title" lang="en">Growing Business</h2>
+                <p class="project__uppertitle">Приложение</p>
               </div>
             </a>
           </li>
@@ -211,53 +223,49 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="address-container">
-        <a href="./index.html" lang="en" class="logo link logo-footer">Web<span class="logo-white">Studio</span></a>
+        <a href="./index.html" lang="en" class="logo">Web<span class="logo--white">Studio</span></a>
         <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
+          <ul class="address__list">
+            <li class="address__item">
               <a href="https://goo.gl/maps/ze5Cd1obeBFwj9Hn6" target="_blank" rel="noopener noreferrer nofollow"
-                class="address-link link">г. Киев, пр-т Леси Украинки, 26</a>
+                class="address__link">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="address-item">
-              <a href="mailto:info@example.com" class="address-link address-contact link">info@example.com</a>
+            <li class="address__item">
+              <a href="mailto:info@example.com" class="address__link address__contact">info@example.com</a>
             </li>
-            <li class="address-item">
-              <a href="tel:+380991111111" class="address-link address-contact link">+38 099 111 11 11</a>
+            <li class="address__item">
+              <a href="tel:+380991111111" class="address__link address__contact">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
       <div class="footer-socials">
         <b class="footer-title">присоединяйтесь</b>
-        <ul class="socials list">
-          <li class="socials-item">
-            <a href="" class="link socials-link" target="_blank" rel="noopener noreferrer nofollow"
-              aria-label="instagram">
-              <svg width="20" height="20" class="social-icon">
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="" class="socials__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram">
+              <svg width="20" height="20" class="socials__icon">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a href="" class="link socials-link" target="_blank" rel="noopener noreferrer nofollow"
-              aria-label="twitter">
-              <svg width="20" height="20" class="social-icon">
+          <li class="socials__item">
+            <a href="" class="socials__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="twitter">
+              <svg width="20" height="20" class="socials__icon">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a href="" class="link socials-link" target="_blank" rel="noopener noreferrer nofollow"
-              aria-label="facebook">
-              <svg width="20" height="20" class="social-icon">
+          <li class="socials__item">
+            <a href="" class="socials__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="facebook">
+              <svg width="20" height="20" class="socials__icon">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a href="" class="link socials-link" target="_blank" rel="noopener noreferrer nofollow"
-              aria-label="linkedin">
-              <svg width="20" height="20" class="social-icon">
+          <li class="socials__item">
+            <a href="" class="socials__link" target="_blank" rel="noopener noreferrer nofollow" aria-label="linkedin">
+              <svg width="20" height="20" class="socials__icon">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
@@ -265,13 +273,13 @@
         </ul>
       </div>
       <form class="footer-form">
-        <label class="footer-form-wrap">
+        <label class="footer-form__wrap">
           <b class="footer-title">Подпишитесь на рассылку</b>
-          <input type="email" class="footer-form-input" name="e-mail" placeholder="E-mail">
+          <input type="email" class="footer-form__input" name="e-mail" placeholder="E-mail">
         </label>
-        <button type="submit" class="register-form-btn btn">
-          <span class="footer-form-btn-wrap">Подписаться
-            <svg width="24" height="24" class="footer-form-icon">
+        <button type="submit" class="main-btn btn">
+          <span class="footer-form-btn__wrap">Подписаться
+            <svg width="24" height="24" class="footer-form__icon">
               <use href="./images/icons.svg#send"></use>
             </svg>
           </span>
