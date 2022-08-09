@@ -9,27 +9,26 @@
 @import './base/reset';
 
 // Components styles
-@import './components/img';
 @import './components/container';
 @import './components/buttons';
 @import './components/card-set';
 @import './components/logo';
 @import './components/socials';
-@import './components/section-title';
+@import './components/section';
+@import './layout/nav';
+@import './layout/address';
+@import './layout/backdrop';
+@import './layout/modal';
+@import './layout/register-form';
 
 // Layout styles
 @import './layout/header';
-@import './layout/nav';
 @import './layout/hero';
 @import './layout/about';
 @import './layout/work';
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
-@import './layout/address';
 @import './layout/portfolio';
 @import './layout/filter';
 @import './layout/project';
-@import './layout/backdrop';
-@import './layout/modal';
-@import './layout/register-form';
